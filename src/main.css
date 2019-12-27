@@ -14,9 +14,14 @@ body {
   margin: 0;
   text-align: center;
   color: #293c4b;
-  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  /* background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); */
   height: 100vh;
   overflow: hidden;
+
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 h1 {
@@ -42,6 +47,8 @@ img {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .column {
@@ -54,9 +61,28 @@ img {
 .card {
   color: blueviolet;
   width: 30%;
-  height: 100%;
+  font-size: 80px;
+  font-family: 'Lobster', cursive;
+  background-color: #3bece1;
+  margin-right: 10px;
+  border: 0;
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.card:hover{
+  opacity: .5;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .btn {
   height: 20%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
