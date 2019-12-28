@@ -14,14 +14,9 @@ body {
   margin: 0;
   text-align: center;
   color: #293c4b;
-  /* background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); */
   height: 100vh;
   overflow: hidden;
-
-  background: #a8ff78;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #1a1b3a;
 }
 
 h1 {
@@ -65,13 +60,14 @@ img {
   font-family: 'Lobster', cursive;
   background-color: #3bece1;
   margin-right: 10px;
-  border: 0;
-  opacity: 1;
-  transition: .3s ease-in-out;
+  border: 2px solid transparent;
+  transition: .2s ease-in-out;
 }
 
-.card:hover{
-  opacity: .5;
+.card:hover:not(.bg-transparent) {
+  background-color: cornflowerblue;
+  color: #602088;
+  border-color: orange;
 }
 
 .bg-transparent {
@@ -82,7 +78,31 @@ img {
   justify-content: space-between;
 }
 
-.btn {
+.h-20 {
   height: 20%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  border: 2px solid #a20cae;
+  border-radius: 40%;
+  background: transparent;
+  color: #a20cae;
+  font-family: 'Lobster', cursive;
+}
+
+.btn:hover {
+  border: 2px solid orange;
+  color: green;
+}
+
+.txt {
+  color: ghostwhite;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+.winner {
+  color: green;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
 }
